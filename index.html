@@ -4,78 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/myself.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./image/iconcode.png" type="image/x-icon">
     <title>Portfólio</title>
+    <script src="https://kit.fontawesome.com/7dfd3e2b4c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
         <div class="logo">Anderson</div>
-        <nav>
+        <nav class="menu-nav">
             <ul>
                 <li>
-                    <a href="#inicio">Início</a>
+                    <a href="#home">Início</a>
                 </li>
                 <li>
-                    <a href="#sobre-mim">Sobre Mim</a>
+                    <a href="#myself">Sobre Mim</a>
                 </li>
                 <li>
-                    <a href="#projetos">Projetos</a>
+                    <a href="#projects">Projetos</a>
                 </li>
                 <li>
-                    <a href="#contato">Contato</a>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="inicio" id="#inicio">
-            <div class="perfil">
-                <img src="./Image/img-perfil.jpeg" alt="image de perfil">
-            </div>
-            <div class="text-inicio">
+        <section class="home" id="home">
+
+            <div class="home-text">
                 <p>Olá meu nome é</p>
                 <h1>Anderson Reis</h1>
-                <p>Sou desenvolvedor Front End</p>
+                <p>Sou desenvolvedor Front End <br>e Back End</p>
+            </div>
+            <div class="img-home">
+                <img src="./Image/Programmer.gif" alt="image de perfil" width="400px" height="400px">
             </div>
         </section>
 
-        <section class="sobre-mim" id="sobre-mim">
-            <div class="title">
-                <h1>Sobre Mim</h1>
-            </div>
-            
-            <div class="description">
-                <h1>QUEM SOU?</h1>
-                <p>Sou iniante na aréa de criação e
-                    manutenção de sites, tenho conhecimento
-                    de prototipação e designer, sempre
-                    pensando na experiencia do usuário.
-                    Sou apaixonado pelo mundo digital e
-                    principalmente desenvolvimento, sempre
-                    procurando inspiração nos meus colegas de
-                    trabalho e no mundo que me rodeia.</p>
-            </div>
-       
+        <section class="myself" id="myself">
 
-            <div class="languages">
+            <h1 class="myself-title">Sobre Mim</h1>
+
+            <div class="myself-container">
+                <div class="myself-description">
+                    <h2>Quem Sou?</h2>
+                    <p>Sou iniante na aréa de criação e
+                        manutenção de sites, tenho conhecimento
+                        de prototipação e designer, sempre
+                        pensando na experiencia do usuário.
+                        Sou apaixonado pelo mundo digital e
+                        principalmente desenvolvimento, sempre
+                        procurando inspiração nos meus colegas de
+                        trabalho e no mundo que me rodeia.</p>
+                </div>
+                <div class="myself-skills">
+                    <h3>Skills</h3>
+                    <div class="container-skills1">
+                        <div>
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-js"></i>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <div class="container-skills2">
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <span>GITHUB</span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+            <h1 class="project-title">Projetos</h1>
+
+            <div class="container-projects1">
                 <div></div>
                 <div></div>
                 <div></div>
+            </div>
+            <div class="container-projects2">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <h1 class="contact-title">Contatos</h1>
+            <div class="container-contact">
+                <div class="contact-text">
+                    <p>Contato</p>
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                        (11) 97616-4379
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        andersonreis1234555@gmail.com
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Vale do Sol, Jandira - SP
+                    </span>
+                </div>
 
-        <section class="projetos" id="projetos"></section>
-        <section class="contato" id="contato"></section>
+                <div class="contact-social-page">
+                    <div>
+                        <a href="https://github.com/Andersoreeis" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/anderson-reis-52273424a/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+
+                <div class="contact-links"></div>
+            </div>
+
+        </section>
     </main>
-    <footer></footer>
+
+
+
+    <footer>
+        <span>Todos os direitos reservados | 2022 Desenvolvido por Anderson Reis</span>
+    </footer>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5511976164379" target="_blank" class="whatsapp">
+        <img src="./image/whatsapp.png" alt="whatsapp link"></a>
+
+
 
 </body>
 

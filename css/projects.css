@@ -1,0 +1,46 @@
+.projects {
+    background: linear-gradient(206deg, var(--color-black)50%, var(--color-primay)50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    font-size: clamp(2rem, 18vw, 14rem);
+    font-weight: 700;
+    background: linear-gradient(#666, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container-projects1 {
+    display: flex;
+    gap: 30px;
+
+}
+
+.container-projects1>div {
+    width: 200px;
+    height: 150px;
+    background-color: #353232;
+    filter: drop-shadow(1px 1px 20px var(--color-primay));
+
+}
+
+.container-projects2 {
+    display: flex;
+    gap: 30px;
+}
+
+.container-projects2>div {
+    width: 200px;
+    height: 150px;
+    background-color: #353232;
+    filter: drop-shadow(1px 1px 10px var(--color-primay));
+
+}

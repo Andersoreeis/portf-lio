@@ -1,0 +1,40 @@
+.logo {
+    font-size: 1.6rem;
+    color: var(--color-secundary);
+    font-weight: bold;
+}
+
+.logo::before {
+    content: "<";
+    color: var(--color-primay);
+    font-size: 1.8rem;
+    filter: drop-shadow(1px 1px 10px var(--color-primay));
+}
+
+.logo::after {
+    content: "/>";
+    color: var(--color-primay);
+    filter: drop-shadow(1px 1px 10px var(--color-primay));
+}
+
+header>nav>ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 72px;
+
+}
+
+header>nav>ul>li {
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    list-style-type: none;
+
+}
+
+header>nav>ul>li>a:hover {
+    color: var(--color-primay);
+    filter: drop-shadow(1px 1px 20px var(--color-primay));
+    transition: 0.2s;
+
+}

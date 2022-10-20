@@ -1,0 +1,104 @@
+:root {
+    --font-family-primary: 'Ubuntu', sans-serif;
+    --color-primay: #00ff59;
+    --color-secundary: #ffffff;
+    --color-black: #000000;
+    --icon-color: #262626;
+
+}
+
+body {
+    display: grid;
+    grid-template-areas: "content";
+    font-family: var(--font-family-primary);
+    background-color: var(--color-black);
+}
+
+header {
+    grid-area: "content";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    place-self: start center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 48px;
+    border-bottom: 3px solid var(--color-primay);
+}
+
+main {
+    grid-area: "content";
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+
+}
+
+section {
+    grid-area: "content";
+    height: 100vh;
+    scroll-behavior: smooth;
+
+}
+
+footer {
+    grid-area: "content";
+    height: 100px;
+    display: flex;
+    border-top: 3px solid var(--color-primay);
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--color-secundary);
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: rgb(47, 255, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.whatsapp::before,
+.whatsapp::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border: 2px solid var(--color-primay);
+    border-radius: 50%;
+    animation: animation-whatsapp 1.5s linear infinite;
+}
+
+@keyframes animation-whatsapp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: scale(1.0);
+        opacity: 0
+    }
+}
+
+.whatsapp::after {
+    animation-delay: 0.5s;
+}

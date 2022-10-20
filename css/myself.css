@@ -1,0 +1,114 @@
+.sobre-mim {
+  max-width: 1200px;
+  width: 100%;
+
+
+}
+
+.myself-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+}
+
+.myself-title {
+  text-align: center;
+  font-size: clamp(2rem, 18vw, 14rem);
+  font-weight: 700;
+  background: linear-gradient(#666, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.myself-description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+  height: 500px;
+}
+
+.myself-description>h2 {
+  color: var(--color-primay);
+  font-size: 2rem;
+}
+
+.myself-description>p {
+  color: var(--color-secundary);
+}
+
+.myself-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+  height: 500px;
+
+}
+
+.myself-skills>h3 {
+  font-size: 2rem;
+  color: var(--color-primay);
+}
+
+.container-skills1 {
+  display: flex;
+  gap: 30px;
+
+}
+
+.container-skills2 {
+  display: flex;
+  gap: 30px;
+
+}
+
+.container-skills1>div {
+  width: 150px;
+  height: 150px;
+  background-color: #353232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  filter: drop-shadow(1px 1px 10px var(--color-primay));
+
+}
+
+.container-skills1>div>i {
+  font-size: 4rem;
+  color: var(--color-secundary);
+}
+
+.container-skills2>div {
+  width: 150px;
+  height: 150px;
+  background-color: #353232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  filter: drop-shadow(1px 1px 10px var(--color-primay));
+}
+
+.container-skills2>div>i {
+  font-size: 4rem;
+  color: var(--color-secundary);
+}
+
+.container-skills1>div>span {
+  font-size: 1.5rem;
+  color: var(--color-secundary);
+  font-weight: bold;
+}
+
+.container-skills2>div>span {
+  font-size: 1.5rem;
+  color: var(--color-secundary);
+  font-weight: bold;
+}
