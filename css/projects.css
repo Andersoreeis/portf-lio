@@ -1,5 +1,5 @@
 .projects {
-    background: linear-gradient(206deg, var(--color-black)50%, var(--color-primay)50%);
+    background: linear-gradient(180deg, var(--color-black), var(--color-primay));
     display: flex;
     align-items: center;
     justify-content: center;
