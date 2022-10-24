@@ -50,6 +50,8 @@ footer {
     border-top: 3px solid var(--color-primay);
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     font-weight: bold;
     color: var(--color-secundary);
 }
@@ -81,6 +83,16 @@ footer {
     border: 2px solid var(--color-primay);
     border-radius: 50%;
     animation: animation-whatsapp 1.5s linear infinite;
+}
+.arrow-back{
+    color: var(--color-primay);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
 }
 
 @keyframes animation-whatsapp {
