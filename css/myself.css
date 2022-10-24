@@ -15,7 +15,6 @@
 
 .myself-title {
   text-align: center;
-  font-size: clamp(2rem, 18vw, 14rem);
   font-weight: 700;
   background: linear-gradient(#666, #000);
   background-clip: text;
@@ -111,4 +110,26 @@
   font-size: 1.5rem;
   color: var(--color-secundary);
   font-weight: bold;
+}
+@media screen and (max-width:765px){
+  .myself-container{
+    flex-direction: column;
+    gap: 0px;
+
+  }
+  .myself-description{
+    width: 500px;
+    height: 200px;
+  }
+  .myself-description>h2{
+    
+  }
+  .myself-skills>h3{
+  
+  }
+  .myself-description>p{
+    text-align: left;
+  }
+
+
 }

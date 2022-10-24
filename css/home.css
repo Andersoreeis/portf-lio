@@ -30,9 +30,6 @@ html {
 .home-text>h1 {
     color: var(--color-primay);
     font-size: 3rem;
-    overflow: hidden;
-    animation: typewriter 2s steps(13) infinite alternate,
-        blink 800ms steps(13) infinite normal;
 }
 
 @keyframes typewriter {
@@ -43,4 +40,19 @@ html {
     to {
         width: 100%;
     }
+}
+@media screen and (max-width:765px){
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home-text{
+       
+        text-align: center;
+
+    }
+
 }

@@ -25,20 +25,21 @@ header {
     margin-top: 48px;
     border-bottom: 3px solid var(--color-primay);
 }
+.title{
+    font-size: clamp(4rem, 20vw, 14rem);
+}
 
 main {
     grid-area: "content";
     display: flex;
-    align-items: center;
     flex-direction: column;
-    scroll-behavior: smooth;
 
 }
 
 section {
     grid-area: "content";
     height: 100vh;
-    scroll-behavior: smooth;
+  
 
 }
 
@@ -101,4 +102,10 @@ footer {
 
 .whatsapp::after {
     animation-delay: 0.5s;
+}
+@media screen and (max-width: 765px){
+    main{
+        gap: 100px;
+    }
+
 }
